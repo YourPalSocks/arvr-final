@@ -448,7 +448,7 @@ GameObject:
   - component: {fileID: 608641400618939277}
   m_Layer: 0
   m_Name: OCube
-  m_TagString: Untagged
+  m_TagString: Cube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -9,12 +9,15 @@ public class BlockBackpack : MonoBehaviour
 {
     public ActionBasedController rController;
     public ActionBasedController lController;
+    public WristPanel wristPanel;
 
     public List<GameObject> blocks;
 
-    private Collider col;
+    [HideInInspector]
+    public GameObject nextBlock;
 
-    private const float MAX_TIME = 50;
+    private Collider col;
+    private const float MAX_TIME = 2;
     private float curTime = 0;
 
 
@@ -22,18 +25,16 @@ public class BlockBackpack : MonoBehaviour
     void Start()
     {
         col = GetComponent<Collider>();
+        GetNextBlock();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(curTime);
-
         if (curTime <= 0)
         {
             if (col.bounds.Contains(rController.transform.position) && rController.selectAction.action.inProgress)
             {
-                Debug.Log("WHAT");
                 SpawnAndGrab(rController);
                 curTime = MAX_TIME;
             }
@@ -48,13 +49,23 @@ public class BlockBackpack : MonoBehaviour
             curTime -= Time.deltaTime;
     }
 
-    void SpawnAndGrab(ActionBasedController c)
+    void GetNextBlock()
     {
         // Randomly pick a block from blocks
         int r = Random.Range(0, blocks.Count - 1);
+        nextBlock = blocks[r];
+        // Update the wrist panel
+        wristPanel.SpawnNextBlock(nextBlock);
+    }
+
+    void SpawnAndGrab(ActionBasedController c)
+    {
+        
         // Spawn that block
-        GameObject spawned = Instantiate(blocks[r], c.transform.position, Quaternion.identity);
+        GameObject spawned = Instantiate(nextBlock, c.transform.position, Quaternion.identity);
         // Force hand to grab block
         spawned.GetComponent<XRGrabInteractable>().interactionManager.ForceSelect(c.GetComponentInChildren<XRDirectInteractor>(), spawned.GetComponent<XRGrabInteractable>());
+        // Get next block
+        GetNextBlock();
     }
 }
