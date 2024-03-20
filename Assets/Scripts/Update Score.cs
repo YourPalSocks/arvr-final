@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class UpdateScore : MonoBehaviour
 {
-    private  TextMesh _title;
+    public TextMeshPro _title;
+    public inTableBox tablebox;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,11 +16,7 @@ public class UpdateScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        _title.text = "Score: " + tablebox.tableTouchCount.ToString();
     }
 
-    public void GetScore(GameObject tableBox)
-    {
-        _title.text = "Score: " + tableBox;
-    }
 }

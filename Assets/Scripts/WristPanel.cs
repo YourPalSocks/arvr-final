@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Transformers;
+using TMPro;
 
 
 public class WristPanel : MonoBehaviour
@@ -21,7 +22,10 @@ public class WristPanel : MonoBehaviour
         // Destroy previous block on panel
         for(int i = 0; i < panel.transform.childCount; i++)
         {
-            Destroy(panel.transform.GetChild(i).gameObject);
+            if (!panel.transform.GetChild(i).GetComponent<TextMeshPro>())
+            { 
+                Destroy(panel.transform.GetChild(i).gameObject);
+            }
         }
         // Spawn the object as is and attach it to the panel
         GameObject nextBlock = Instantiate(block);

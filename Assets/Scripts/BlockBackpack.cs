@@ -33,13 +33,15 @@ public class BlockBackpack : MonoBehaviour
     {
         if (curTime <= 0)
         {
-            if (col.bounds.Contains(rController.transform.position) && rController.selectAction.action.inProgress)
+            if (col.bounds.Contains(rController.transform.position) && rController.selectAction.action.inProgress
+                && rController.GetComponentInChildren<XRDirectInteractor>().interactablesSelected.Count == 0)
             {
                 SpawnAndGrab(rController);
                 curTime = MAX_TIME;
             }
 
-            if (col.bounds.Contains(lController.transform.position) && lController.selectAction.action.inProgress)
+            if (col.bounds.Contains(lController.transform.position) && lController.selectAction.action.inProgress
+                && lController.GetComponentInChildren<XRDirectInteractor>().interactablesSelected.Count == 0)
             {
                 SpawnAndGrab(lController);
                 curTime = MAX_TIME;
@@ -60,7 +62,6 @@ public class BlockBackpack : MonoBehaviour
 
     void SpawnAndGrab(ActionBasedController c)
     {
-        
         // Spawn that block
         GameObject spawned = Instantiate(nextBlock, c.transform.position, Quaternion.identity);
         // Force hand to grab block
