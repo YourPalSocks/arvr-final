@@ -16,6 +16,7 @@ public class BlockBackpack : MonoBehaviour
     [HideInInspector]
     public GameObject nextBlock;
 
+    private AudioSource sfx;
     private Collider col;
     private const float MAX_TIME = 2;
     private float curTime = 0;
@@ -25,6 +26,7 @@ public class BlockBackpack : MonoBehaviour
     void Start()
     {
         col = GetComponent<Collider>();
+        sfx = GetComponent<AudioSource>();
         GetNextBlock();
     }
 
@@ -68,5 +70,8 @@ public class BlockBackpack : MonoBehaviour
         spawned.GetComponent<XRGrabInteractable>().interactionManager.ForceSelect(c.GetComponentInChildren<XRDirectInteractor>(), spawned.GetComponent<XRGrabInteractable>());
         // Get next block
         GetNextBlock();
+        // Adjust and Play sound
+        sfx.pitch = Random.Range(0.5f, 1.5f);
+        sfx.Play();
     }
 }
