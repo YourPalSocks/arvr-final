@@ -5928,9 +5928,10 @@ MonoBehaviour:
   blocks:
   - {fileID: 8155377172934904049, guid: abfbe46f0e640cb469eba3cab8dc7d3d, type: 3}
   - {fileID: 4948672013080779896, guid: 59fa527d7688ec144b50f28190428416, type: 3}
-  - {fileID: 529882080157487085, guid: 5fea0b098f81a8d47b110d0843a3e3f7, type: 3}
+  - {fileID: 3310719424810839438, guid: 5f6842081ee9d8945a4a801204873cab, type: 3}
   - {fileID: 8342233708358030344, guid: eef30bfb3bd2b1247917af4f3e607029, type: 3}
   - {fileID: 1261284916935313389, guid: a22aaa4781123014e9b15c9c98aae29d, type: 3}
+  - {fileID: 1377109931631224872, guid: 344bcb709e4c9bc40bea8d33a64a0f80, type: 3}
   nextBlock: {fileID: 0}
 --- !u!1 &1161455401
 GameObject:
@@ -8608,7 +8609,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 7e-45, z: 3.582e-42, w: NaN}
+  m_BoundingSphereOverride: {x: 4.9358124e-31, y: 9.102061e-12, z: 1.1693397e-19, w: 4.9358124e-31}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
