@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3367313778151593981}
   - component: {fileID: 4934716572466663548}
   - component: {fileID: 2848222334704856813}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Color Affordance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 5130843529740572138}
   - component: {fileID: 272783614363692184}
   - component: {fileID: 7402215382632368532}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube Interactable (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 4262382536562281571}
   - component: {fileID: 4947095893531121568}
   - component: {fileID: 1738933908103075038}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube Interactable (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,8 +341,7 @@ GameObject:
   - component: {fileID: 4850083839313247359}
   - component: {fileID: 5860520183519625228}
   - component: {fileID: 5613640392692365046}
-  - component: {fileID: -7492872584324891433}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Ice ICube
   m_TagString: Cube
   m_Icon: {fileID: 0}
@@ -592,18 +591,6 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
---- !u!114 &-7492872584324891433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4948672013080779896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 015b802c62413cf4cb824f6fe1659d56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5423501481416115456
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,7 +603,7 @@ GameObject:
   - component: {fileID: 7278240081194118575}
   - component: {fileID: 2393445479984786376}
   - component: {fileID: 5633765820333903061}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube Interactable (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -721,7 +708,7 @@ GameObject:
   - component: {fileID: 3474314985589108207}
   - component: {fileID: 6425940586430596295}
   - component: {fileID: 6354717906186224952}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube Interactable (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -824,7 +811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6416784023298921358}
   - component: {fileID: 1323997012998878950}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Interaction Affordance
   m_TagString: Untagged
   m_Icon: {fileID: 0}

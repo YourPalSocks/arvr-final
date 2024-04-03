@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8173732080409702376}
   - component: {fileID: 1722412205484552609}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Interaction Affordance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,8 +97,7 @@ GameObject:
   - component: {fileID: 33730058900981000}
   - component: {fileID: 6381686044088663853}
   - component: {fileID: 259951420515892878}
-  - component: {fileID: -7281698872634879529}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Ice Cube
   m_TagString: Cube
   m_Icon: {fileID: 0}
@@ -394,18 +393,6 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
---- !u!114 &-7281698872634879529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8155377172934904049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 015b802c62413cf4cb824f6fe1659d56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8551464279613256166
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +404,7 @@ GameObject:
   - component: {fileID: 5324715828372650353}
   - component: {fileID: 687918536994631573}
   - component: {fileID: 6916195488325447448}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Color Affordance
   m_TagString: Untagged
   m_Icon: {fileID: 0}

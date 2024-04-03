@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OnCarpetCollision : MonoBehaviour
 {
@@ -16,7 +17,8 @@ public class OnCarpetCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Cube")
         {
-            Debug.Log("I've been hit");
+            SceneManager.LoadScene(0);
+            // TODO: Update high score, gui whatevs
         }
     }
 }
