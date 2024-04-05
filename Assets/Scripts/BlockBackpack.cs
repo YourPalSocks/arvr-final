@@ -65,7 +65,7 @@ public class BlockBackpack : MonoBehaviour
     void SpawnAndGrab(ActionBasedController c)
     {
         // Spawn that block
-        GameObject spawned = Instantiate(nextBlock, c.transform.position, Quaternion.identity);
+        GameObject spawned = Instantiate(nextBlock, c.transform.position + new Vector3(0, -50, 0), Quaternion.identity);
         // Force hand to grab block
         spawned.GetComponent<XRGrabInteractable>().interactionManager.ForceSelect(c.GetComponentInChildren<XRDirectInteractor>(), spawned.GetComponent<XRGrabInteractable>());
         // Get next block
