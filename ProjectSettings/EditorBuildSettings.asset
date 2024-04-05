@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: b09f1d4cd507e044f87afa3521e2a9a4
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/MainScene.unity
     guid: 55daccc09a3b69647bbab145b54a3ab3
   - enabled: 1
-    path: Assets/Scenes/IceSampleScene.unity
+    path: Assets/Scenes/IceScene.unity
     guid: 5b95d744503acbb43b6b504e4a41afa6
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
