@@ -25,7 +25,7 @@ public class inTableBox : MonoBehaviour
             }
             // Update scoreboard
             tableHeight = maxHeight;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.25f);
         }
     }
 
